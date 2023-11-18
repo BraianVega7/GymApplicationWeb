@@ -14,12 +14,15 @@ namespace GymWeb.Models
         [ForeignKey("ClaseRefId")]
         public virtual Clase? Clases { get; set; }
 
+        [Required(ErrorMessage = "El dia debe ser obligatorio")]
         [Display(Name = "Dia")]
         public string? Dia { get; set; }
 
+        [Required(ErrorMessage = "La hora de inicio debe ser obligatorio")]
         [Display(Name = "HoraInicio")]
         public DateTime HoraInicio { get; set; }
 
+        [Required(ErrorMessage = "La hora final debe ser obligatorio")]
         [Display(Name = "HoraFin")]
         public DateTime HoraFin { get; set; }
     }

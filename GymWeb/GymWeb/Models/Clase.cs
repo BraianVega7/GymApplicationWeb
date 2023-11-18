@@ -26,11 +26,6 @@ namespace GymWeb.Models
         [Display(Name = "Dificultad")]
         public string? Dificultad { get; set; }
 
-        [Display(Name="Valor")]
-        public int PrecioMesRefId {  get; set; }
-        [ForeignKey("PrecioMesRefId")]
-        public virtual PrecioMes? PrecioMes { get; set; }
-
     }
 
 }

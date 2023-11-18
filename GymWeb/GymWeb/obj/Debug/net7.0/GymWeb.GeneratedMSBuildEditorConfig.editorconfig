@@ -9,37 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GymWeb
 build_property.RootNamespace = GymWeb
-build_property.ProjectDir = C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\Curso mvc\GymWeb\GymWeb\
+build_property.ProjectDir = C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\Curso mvc\GymWeb\GymWeb
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/Curso mvc/GymWeb/GymWeb/Views/Home/Index.cshtml]
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Alumnos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Alumnos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Alumnos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Alumnos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Alumnos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bW5vc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Calendarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Calendarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Calendarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Calendarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Calendarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Clases/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Clases/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Clases/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Clases/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Clases/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/CondicionPagos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZGljaW9uUGFnb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/CondicionPagos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZGljaW9uUGFnb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/CondicionPagos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZGljaW9uUGFnb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/CondicionPagos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZGljaW9uUGFnb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/CondicionPagos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZGljaW9uUGFnb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/Curso mvc/GymWeb/GymWeb/Views/Home/Privacy.cshtml]
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/Curso mvc/GymWeb/GymWeb/Views/Shared/Error.cshtml]
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/PrecioMes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlY2lvTWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/PrecioMes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlY2lvTWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/PrecioMes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlY2lvTWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/PrecioMes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlY2lvTWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/PrecioMes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlY2lvTWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/Curso mvc/GymWeb/GymWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/Curso mvc/GymWeb/GymWeb/Views/_ViewImports.cshtml]
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/Curso mvc/GymWeb/GymWeb/Views/_ViewStart.cshtml]
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/Curso mvc/GymWeb/GymWeb/Views/Shared/_Layout.cshtml]
+[C:/Users/Lenovo/Desktop/Tec.EnProgramacion/Lab 4/GymWeb/GymApplicationWeb/GymWeb/GymWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8edjn6kx3o
