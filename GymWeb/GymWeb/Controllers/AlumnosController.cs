@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GymWeb.Data;
 using GymWeb.Models;
+using System.Data;
+using ClosedXML.Excel;
 
 namespace GymWeb.Controllers
 {
@@ -48,7 +50,7 @@ namespace GymWeb.Controllers
         // GET: Alumnos/Create
         public IActionResult Create()
         {
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion");
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre");
             return View();
         }
 
@@ -62,10 +64,10 @@ namespace GymWeb.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(alumno);
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();  
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion", alumno.ClaseRefId);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", alumno.ClaseRefId);
             return View(alumno);
         }
 
@@ -82,7 +84,7 @@ namespace GymWeb.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion", alumno.ClaseRefId);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", alumno.ClaseRefId);
             return View(alumno);
         }
 
@@ -118,7 +120,7 @@ namespace GymWeb.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion", alumno.ClaseRefId);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", alumno.ClaseRefId);
             return View(alumno);
         }
 
@@ -163,6 +165,54 @@ namespace GymWeb.Controllers
         private bool AlumnoExists(int id)
         {
           return (_context.Alumno?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+        [HttpGet]
+        public async Task<FileResult> ExportarLibrosAExcel()
+        {
+            var alumno = await _context.Alumno.ToListAsync();
+            var nombreArchivo = $"Alumnos.xlsx";
+            return GenerarExcel(nombreArchivo, alumno);
+        }
+
+        private FileResult GenerarExcel(string nombreArchivo, IEnumerable<Alumno> alumnos)
+        {
+            DataTable datatable = new DataTable("Alumnos");
+            datatable.Columns.AddRange(new DataColumn[]
+            {
+                new DataColumn ("Id"),
+                new DataColumn ("Nombre"),
+                new DataColumn ("Apellido"),
+                new DataColumn ("Dni"),
+                new DataColumn ("Edad"),
+                new DataColumn ("Telefono"),
+                new DataColumn ("Direccion"),
+                new DataColumn ("Clase")
+            });
+            foreach (var alumno in alumnos)
+            {
+                datatable.Rows.Add(alumno.Id,
+                    alumno.Nombre,
+                    alumno.Apellido,
+                    alumno.Dni,
+                    alumno.Edad,
+                    alumno.Telefono,
+                    alumno.Direccion,
+                    alumno.ClaseRefId
+                    );
+            }
+            using (XLWorkbook wb = new XLWorkbook())
+            {
+                wb.Worksheets.Add(datatable);
+
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    wb.SaveAs(stream);
+                    return File(stream.ToArray(),
+                        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                        nombreArchivo);
+                }
+            }
         }
     }
 }

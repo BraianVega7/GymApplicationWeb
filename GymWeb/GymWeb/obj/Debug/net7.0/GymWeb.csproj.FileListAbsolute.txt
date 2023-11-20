@@ -370,3 +370,10 @@ C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb
 C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\ClosedXML.dll
+C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\ExcelNumberFormat.dll
+C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\Irony.dll
+C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\SixLabors.Fonts.dll
+C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Users\Lenovo\Desktop\Tec.EnProgramacion\Lab 4\GymWeb\GymApplicationWeb\GymWeb\GymWeb\bin\Debug\net7.0\XLParser.dll

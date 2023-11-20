@@ -48,7 +48,7 @@ namespace GymWeb.Controllers
         // GET: PrecioMes/Create
         public IActionResult Create()
         {
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion");
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace GymWeb.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion", precioMes.ClaseRefId);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", precioMes.ClaseRefId);
             return View(precioMes);
         }
 
@@ -82,7 +82,7 @@ namespace GymWeb.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion", precioMes.ClaseRefId);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", precioMes.ClaseRefId);
             return View(precioMes);
         }
 
@@ -118,7 +118,7 @@ namespace GymWeb.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Descripcion", precioMes.ClaseRefId);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", precioMes.ClaseRefId);
             return View(precioMes);
         }
 
