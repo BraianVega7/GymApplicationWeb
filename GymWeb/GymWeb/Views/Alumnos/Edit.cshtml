@@ -1,4 +1,4 @@
-﻿@model GymWeb.Models.Alumno
+﻿@model GymWeb.ViewModel.AlumnoViewModel
 
 @{
     ViewData["Title"] = "Edit";
@@ -10,7 +10,15 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="ImagenAlumno" class="control-label"></label>
+                <div class="custom-file">
+                    <input asp-for="ImagenAlumno" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Seleccione el archivo</label>
+                </div>
+                <span asp-validation-for="ImagenAlumno" class="text-danger"></span>
+            </div>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">

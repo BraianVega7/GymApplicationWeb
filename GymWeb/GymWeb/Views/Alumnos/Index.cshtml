@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Nombre)
             </th>
             <th>
@@ -42,6 +45,13 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                <img src="~/Images/@item.Imagen"
+                class="rounded-start"
+                height="150" width="150"
+                asp-append-version="true" />
+                <br>              
+             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>

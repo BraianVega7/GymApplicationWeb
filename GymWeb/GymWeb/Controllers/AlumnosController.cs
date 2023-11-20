@@ -9,6 +9,9 @@ using GymWeb.Data;
 using GymWeb.Models;
 using System.Data;
 using ClosedXML.Excel;
+using GymWeb.ViewModel;
+using Microsoft.AspNetCore.Hosting;
+using DocumentFormat.OpenXml.Drawing.Diagrams;
 
 namespace GymWeb.Controllers
 {
@@ -16,9 +19,12 @@ namespace GymWeb.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public AlumnosController(ApplicationDbContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public AlumnosController(ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
+
         }
 
         // GET: Alumnos
@@ -59,16 +65,29 @@ namespace GymWeb.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Apellido,Dni,Edad,Telefono,Direccion,ClaseRefId,FechaRegistro")] Alumno alumno)
+        public async Task<IActionResult> Create(AlumnoViewModel model)
         {
+            string uniqueFileName = UploadedFile(model);
             if (ModelState.IsValid)
             {
+                Alumno alumno = new Alumno()
+                {
+                    Imagen = uniqueFileName,
+                    Nombre = model.Nombre,
+                    Apellido = model.Apellido,
+                    Dni = model.Dni,
+                    Telefono = model.Telefono,
+                    Direccion = model.Direccion,
+                    ClaseRefId = model.ClaseRefId,
+                    FechaRegistro = model.FechaRegistro,
+
+                };
                 _context.Add(alumno);
                 await _context.SaveChangesAsync();  
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", alumno.ClaseRefId);
-            return View(alumno);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", model.ClaseRefId);
+            return View(model);
         }
 
         // GET: Alumnos/Edit/5
@@ -80,12 +99,23 @@ namespace GymWeb.Controllers
             }
 
             var alumno = await _context.Alumno.FindAsync(id);
+            AlumnoViewModel alumnoViewModel = new AlumnoViewModel()
+            {
+                Nombre = alumno.Nombre,
+                Apellido = alumno.Apellido,
+                Dni = alumno.Dni,
+                Telefono = alumno.Telefono,
+                Direccion = alumno.Direccion,
+                ClaseRefId = alumno.ClaseRefId,
+                FechaRegistro = alumno.FechaRegistro,
+
+            };
             if (alumno == null)
             {
                 return NotFound();
             }
             ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", alumno.ClaseRefId);
-            return View(alumno);
+            return View(alumnoViewModel);
         }
 
         // POST: Alumnos/Edit/5
@@ -93,9 +123,10 @@ namespace GymWeb.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido,Dni,Edad,Telefono,Direccion,ClaseRefId,FechaRegistro")] Alumno alumno)
+        public async Task<IActionResult> Edit(int id,AlumnoViewModel model)
         {
-            if (id != alumno.Id)
+            string uniqueFileName = UploadedFile(model);
+            if (id != model.Id)
             {
                 return NotFound();
             }
@@ -104,12 +135,21 @@ namespace GymWeb.Controllers
             {
                 try
                 {
+                    var alumno = await _context.Alumno.FindAsync(id);
+                    alumno.Imagen = uniqueFileName;
+                    alumno.Nombre = model.Nombre;
+                    alumno.Apellido = model.Apellido;
+                    alumno.Dni = model.Dni;
+                    alumno.Telefono = model.Telefono;
+                    alumno.Direccion = model.Direccion;
+                    alumno.ClaseRefId = model.ClaseRefId;
+                    alumno.FechaRegistro = model.FechaRegistro;
                     _context.Update(alumno);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AlumnoExists(alumno.Id))
+                    if (!AlumnoExists(model.Id))
                     {
                         return NotFound();
                     }
@@ -120,8 +160,8 @@ namespace GymWeb.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", alumno.ClaseRefId);
-            return View(alumno);
+            ViewData["ClaseRefId"] = new SelectList(_context.Clase, "Id", "Nombre", model.ClaseRefId);
+            return View(model);
         }
 
         // GET: Alumnos/Delete/5
@@ -213,6 +253,22 @@ namespace GymWeb.Controllers
                         nombreArchivo);
                 }
             }
+        }
+        private string UploadedFile(AlumnoViewModel model)
+        {
+            string uniqueFileName = null;
+
+            if (model.ImagenAlumno != null)
+            {
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "" + model.ImagenAlumno.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.ImagenAlumno.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
         }
     }
 }

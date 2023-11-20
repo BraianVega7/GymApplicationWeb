@@ -1,16 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using GymWeb.Models;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace GymWeb.Models
+namespace GymWeb.ViewModel
 {
-    public class Alumno
+    public class AlumnoViewModel
     {
-        [Key]
-        [Column("ID")]
         public int Id { get; set; }
 
-        [Display(Name ="Imagen")]
-        public string? Imagen {  get; set; }
+        [Display(Name = "Imagen Alumno")]
+        public IFormFile? ImagenAlumno { get; set; }
+
+        [Display(Name = "Imagen")]
+        public string? Imagen { get; set; }
 
         [Required(ErrorMessage = "El nombre debe ser obligatorio")]
         [Display(Name = "Nombre")]
@@ -29,7 +31,7 @@ namespace GymWeb.Models
         public int Edad { get; set; }
 
         [Display(Name = "Telefono")]
-        public int Telefono {  get; set; }
+        public int Telefono { get; set; }
 
         [Display(Name = "Direccion")]
         public string? Direccion { get; set; }
@@ -41,6 +43,5 @@ namespace GymWeb.Models
 
         [Column(TypeName = "smalldatetime")]
         public DateTime? FechaRegistro { get; set; }
-
     }
 }

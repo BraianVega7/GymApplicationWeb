@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\GymWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\ed287c33-c87e-44c9-b166-6ef309ce856fdescarga.jpg",
+      "PackagePath": "staticwebassets\\Images\\ed287c33-c87e-44c9-b166-6ef309ce856fdescarga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\ee7543ac-6aa5-49b7-b822-b56f3719914fdescarga.jpg",
+      "PackagePath": "staticwebassets\\Images\\ee7543ac-6aa5-49b7-b822-b56f3719914fdescarga.jpg"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

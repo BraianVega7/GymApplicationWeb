@@ -20,10 +20,12 @@ namespace GymWeb.Models
 
         [Required(ErrorMessage = "La hora de inicio debe ser obligatorio")]
         [Display(Name = "HoraInicio")]
-        public DateTime HoraInicio { get; set; }
+        [Column(TypeName = "time")]
+        public TimeSpan HoraInicio { get; set; }
 
         [Required(ErrorMessage = "La hora final debe ser obligatorio")]
         [Display(Name = "HoraFin")]
-        public DateTime HoraFin { get; set; }
+        [Column(TypeName = "time")]
+        public TimeSpan HoraFin { get; set; }
     }
 }

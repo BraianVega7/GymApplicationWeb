@@ -4,6 +4,7 @@ using GymWeb.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231120185649_nuevamigracion")]
+    partial class nuevamigracion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,9 +52,6 @@ namespace GymWeb.Migrations
 
                     b.Property<DateTime?>("FechaRegistro")
                         .HasColumnType("smalldatetime");
-
-                    b.Property<string>("Imagen")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()

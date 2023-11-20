@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FprZgPwsBFZRMExFXFqpZXav9hgotFlyaaF+6PI7fGE=",
+  "Hash": "JRDwxmtw0B7i/G6xDOSVoKbocjHJGVVwMkpRIG4E5QI=",
   "Source": "GymWeb",
   "BasePath": "_content/GymWeb",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\ed287c33-c87e-44c9-b166-6ef309ce856fdescarga.jpg",
+      "SourceId": "GymWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\",
+      "BasePath": "_content/GymWeb",
+      "RelativePath": "Images/ed287c33-c87e-44c9-b166-6ef309ce856fdescarga.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ed287c33-c87e-44c9-b166-6ef309ce856fdescarga.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\ee7543ac-6aa5-49b7-b822-b56f3719914fdescarga.jpg",
+      "SourceId": "GymWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\",
+      "BasePath": "_content/GymWeb",
+      "RelativePath": "Images/ee7543ac-6aa5-49b7-b822-b56f3719914fdescarga.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ee7543ac-6aa5-49b7-b822-b56f3719914fdescarga.jpg"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\js\\site.js",
