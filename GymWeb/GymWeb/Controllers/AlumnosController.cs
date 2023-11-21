@@ -208,7 +208,7 @@ namespace GymWeb.Controllers
         }
 
         [HttpGet]
-        public async Task<FileResult> ExportarLibrosAExcel()
+        public async Task<FileResult> ExportarAlumnosAExcel()
         {
             var alumno = await _context.Alumno.ToListAsync();
             var nombreArchivo = $"Alumnos.xlsx";

@@ -10,6 +10,7 @@
         "dependencies": {
           "ClosedXML": "0.102.1",
           "EFCore.BulkExtensions": "7.1.6",
+          "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.Design": "7.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.14",

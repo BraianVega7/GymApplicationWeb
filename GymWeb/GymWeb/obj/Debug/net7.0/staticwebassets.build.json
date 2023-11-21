@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JRDwxmtw0B7i/G6xDOSVoKbocjHJGVVwMkpRIG4E5QI=",
+  "Hash": "xUH9VBc894djAToIGhbOcLxTfteITvh+YOQpzTq9dKc=",
   "Source": "GymWeb",
   "BasePath": "_content/GymWeb",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\95b221e6-03ae-4b91-8fa4-d535fd77ba4cdescarga.jpg",
+      "SourceId": "GymWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\",
+      "BasePath": "_content/GymWeb",
+      "RelativePath": "Images/95b221e6-03ae-4b91-8fa4-d535fd77ba4cdescarga.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\95b221e6-03ae-4b91-8fa4-d535fd77ba4cdescarga.jpg"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\ed287c33-c87e-44c9-b166-6ef309ce856fdescarga.jpg",
