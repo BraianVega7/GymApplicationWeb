@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/X2cdt4CpcmrpeUf5XfGqsMiJ0frb5Vb5fktIRuLWyE=",
+  "Hash": "afCikPzXM6gMLnpR7CVlxb0qQwr4XNCYUp/pBv16tlo=",
   "Source": "GymWeb",
   "BasePath": "_content/GymWeb",
   "Mode": "Default",
@@ -187,6 +187,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\875c3862-9ba5-401b-8148-9688111b7daa746474-milei_0.jpg"
     },
     {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\93f48c53-6793-4a42-89da-4bc690092f4briquelme.jpg",
+      "SourceId": "GymWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\",
+      "BasePath": "_content/GymWeb",
+      "RelativePath": "Images/93f48c53-6793-4a42-89da-4bc690092f4briquelme.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\93f48c53-6793-4a42-89da-4bc690092f4briquelme.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\95b221e6-03ae-4b91-8fa4-d535fd77ba4cdescarga.jpg",
       "SourceId": "GymWeb",
       "SourceType": "Discovered",
@@ -270,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\ee7543ac-6aa5-49b7-b822-b56f3719914fdescarga.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\Images\\feebcd09-104c-4b83-95bc-ac834f5c93aa746474-milei_0.jpg",
+      "SourceId": "GymWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\",
+      "BasePath": "_content/GymWeb",
+      "RelativePath": "Images/feebcd09-104c-4b83-95bc-ac834f5c93aa746474-milei_0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\feebcd09-104c-4b83-95bc-ac834f5c93aa746474-milei_0.jpg"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\Tec.EnProgramacion\\Lab 4\\GymWeb\\GymApplicationWeb\\GymWeb\\GymWeb\\wwwroot\\js\\site.js",

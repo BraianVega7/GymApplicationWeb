@@ -76,6 +76,7 @@ namespace GymWeb.Controllers
                     Nombre = model.Nombre,
                     Apellido = model.Apellido,
                     Dni = model.Dni,
+                    Edad= model.Edad,
                     Telefono = model.Telefono,
                     Direccion = model.Direccion,
                     ClaseRefId = model.ClaseRefId,
@@ -104,6 +105,7 @@ namespace GymWeb.Controllers
                 Nombre = alumno.Nombre,
                 Apellido = alumno.Apellido,
                 Dni = alumno.Dni,
+                Edad = alumno.Edad,
                 Telefono = alumno.Telefono,
                 Direccion = alumno.Direccion,
                 ClaseRefId = alumno.ClaseRefId,
@@ -140,6 +142,7 @@ namespace GymWeb.Controllers
                     alumno.Nombre = model.Nombre;
                     alumno.Apellido = model.Apellido;
                     alumno.Dni = model.Dni;
+                    alumno.Edad = model.Edad;
                     alumno.Telefono = model.Telefono;
                     alumno.Direccion = model.Direccion;
                     alumno.ClaseRefId = model.ClaseRefId;
